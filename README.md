@@ -130,5 +130,5 @@ The technology GIF above provides a seamless visual loop directly inside GitHub.
 
 <div align="center">
 <p><strong>Build thoughtfully. Integrate intelligently. Ship useful software.</strong></p>
-<p><a href="https://github.com/Ahmed8xdev">GitHub profile</a> · <a href="https://github.com/Ahmed8xdev?tab=repositories">Source repositories</a> · <a href="./PROJECTS.md">Project details</a> · <a href="./docs/index.html">Interactive 3D source</a></p>
+<p><a href="https://github.com/Ahmed8xdev">GitHub profile</a> · <a href="https://github.com/Ahmed8xdev?tab=repositories">Source repositories</a> · <a href="./PROJECTS.md">Project details</a> · <a href="./docs/index.html">Interactive 3D source</a> · <a href="./SEARCH_VISIBILITY.md">Search Console setup</a></p>
 </div>
