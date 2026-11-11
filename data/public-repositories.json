@@ -1,0 +1,70 @@
+{
+  "username": "Ahmed8xdev",
+  "scannedAt": "2026-11-11T15:51:55.402Z",
+  "publicRepoCount": 3,
+  "projects": [
+    {
+      "name": "barber-shop",
+      "url": "https://github.com/Ahmed8xdev/barber-shop",
+      "description": "A Next.js front end with a 3D- and motion-capable visual stack.",
+      "editorialBrief": "A Next.js front end with a 3D- and motion-capable visual stack.",
+      "stackHints": [
+        "Next.js",
+        "React",
+        "TypeScript",
+        "Three.js",
+        "GSAP"
+      ],
+      "languages": [
+        "TypeScript",
+        "CSS",
+        "JavaScript"
+      ],
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "lastPushed": "2026-07-10T10:48:23Z"
+    },
+    {
+      "name": "toolshub",
+      "url": "https://github.com/Ahmed8xdev/toolshub",
+      "description": "An agent utility dashboard with documentation and delay tools and a Three.js visual background.",
+      "editorialBrief": "An agent utility dashboard with documentation and delay tools and a Three.js visual background.",
+      "stackHints": [
+        "HTML",
+        "JavaScript",
+        "Tailwind CSS",
+        "Three.js"
+      ],
+      "languages": [
+        "HTML"
+      ],
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "lastPushed": "2025-08-25T20:12:47Z"
+    },
+    {
+      "name": "studio",
+      "url": "https://github.com/Ahmed8xdev/studio",
+      "description": "A Next.js application codebase integrating Firebase, Genkit and a substantial UI component system.",
+      "editorialBrief": "A Next.js application codebase integrating Firebase, Genkit and a substantial UI component system.",
+      "stackHints": [
+        "Next.js",
+        "TypeScript",
+        "Firebase",
+        "Genkit"
+      ],
+      "languages": [
+        "TypeScript",
+        "CSS",
+        "Nix",
+        "JavaScript"
+      ],
+      "topics": [],
+      "stars": 0,
+      "forks": 0,
+      "lastPushed": "2025-08-05T03:23:38Z"
+    }
+  ]
+}

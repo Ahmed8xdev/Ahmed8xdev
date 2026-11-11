@@ -1,11 +1,34 @@
 # Public project index
 
-This index documents repositories that are visible on the connected public GitHub account. It does not imply that client projects are open source.
+Automatically discovered from public, non-fork repositories belonging to [Ahmed8xdev](https://github.com/Ahmed8xdev).
+Project descriptions are based on observed files or public metadata; no private code or invented outcomes are included.
 
-| Repository | Verified technical brief | Known stack |
-|---|---|---|
-| [barber-shop](https://github.com/Ahmed8xdev/barber-shop) | Next.js frontend with animation and 3D-capable dependencies | Next.js, React, TypeScript, Three.js, React Three Fiber, GSAP, Tailwind CSS |
-| [studio](https://github.com/Ahmed8xdev/studio) | Next.js application repository with Genkit, Firebase, and UI/charting dependencies | Next.js, React, TypeScript, Genkit, Firebase, Radix UI, Recharts |
-| [toolshub](https://github.com/Ahmed8xdev/toolshub) | Agent tool launcher including a documentation helper and delay calculator | HTML, JavaScript, Tailwind CSS, Three.js |
+**Public projects detected:** 3
 
-The automated workflow replaces this file with live public-repository metadata after its first successful run. Stack descriptions here are grounded in inspected public files; a dependency does not by itself establish that a feature is fully implemented.
+## [barber-shop](https://github.com/Ahmed8xdev/barber-shop)
+
+**Brief:** A Next\.js front end with a 3D- and motion-capable visual stack\.
+
+**Languages:** TypeScript, CSS, JavaScript
+**Technologies observed in files or packages:** Next\.js, React, TypeScript, Three\.js, GSAP
+**Stars / forks:** 0 / 0
+**Last pushed:** 2026-07-10
+
+## [toolshub](https://github.com/Ahmed8xdev/toolshub)
+
+**Brief:** An agent utility dashboard with documentation and delay tools and a Three\.js visual background\.
+
+**Languages:** HTML
+**Technologies observed in files or packages:** HTML, JavaScript, Tailwind CSS, Three\.js
+**Stars / forks:** 0 / 0
+**Last pushed:** 2025-08-25
+
+## [studio](https://github.com/Ahmed8xdev/studio)
+
+**Brief:** A Next\.js application codebase integrating Firebase, Genkit and a substantial UI component system\.
+
+**Languages:** TypeScript, CSS, Nix, JavaScript
+**Technologies observed in files or packages:** Next\.js, TypeScript, Firebase, Genkit
+**Stars / forks:** 0 / 0
+**Last pushed:** 2025-08-05
+

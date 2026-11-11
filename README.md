@@ -58,11 +58,12 @@ I keep the public showcase grounded in **actual public repositories**. The secti
 <!-- AUTO-PROJECTS:START -->
 <table>
 <tr>
-<td width="50%" valign="top"><a href="https://github.com/Ahmed8xdev/barber-shop"><strong>💈 barber-shop</strong></a><br/><br/>A Next.js project with a motion- and 3D-capable front-end stack.<br/><br/><sub>Next.js · TypeScript · React · Three.js · GSAP</sub></td>
-<td width="50%" valign="top"><a href="https://github.com/Ahmed8xdev/studio"><strong>✦ studio</strong></a><br/><br/>A Next.js application codebase featuring Genkit, Firebase, and a rich UI stack.<br/><br/><sub>Next.js · TypeScript · Firebase · Genkit</sub></td>
-</tr><tr>
-<td width="50%" valign="top"><a href="https://github.com/Ahmed8xdev/toolshub"><strong>🛠️ toolshub</strong></a><br/><br/>An agent-facing tool hub including a documentation helper and delay calculator, with a Three.js background.<br/><br/><sub>HTML · JavaScript · Tailwind CSS · Three.js</sub></td>
-<td width="50%" valign="top"><strong>＋ More projects as they go public</strong><br/><br/>The scheduled discovery workflow scans accessible public repositories and refreshes this showcase and the complete <a href="./PROJECTS.md">project index</a>.<br/><br/><sub>Public GitHub repositories only · no private code exposed</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/Ahmed8xdev/barber-shop"><strong>💈 barber-shop</strong></a><br/><br/>A Next.js front end with a 3D- and motion-capable visual stack.<br/><br/><sub>Next.js · React · TypeScript · Three.js · GSAP</sub></td>
+<td width="50%" valign="top"><a href="https://github.com/Ahmed8xdev/studio"><strong>✦ studio</strong></a><br/><br/>A Next.js application codebase integrating Firebase, Genkit and a substantial UI component system.<br/><br/><sub>Next.js · TypeScript · Firebase · Genkit · CSS</sub></td>
+</tr>
+<tr>
+<td width="50%" valign="top"><a href="https://github.com/Ahmed8xdev/toolshub"><strong>🛠️ toolshub</strong></a><br/><br/>An agent utility dashboard with documentation and delay tools and a Three.js visual background.<br/><br/><sub>HTML · JavaScript · Tailwind CSS · Three.js</sub></td>
+<td width="50%" valign="top"><strong>Explore more projects</strong><br/><br/><a href="https://github.com/Ahmed8xdev?tab=repositories">All public repositories</a></td>
 </tr>
 </table>
 <!-- AUTO-PROJECTS:END -->
