@@ -73,6 +73,10 @@ nav{display:flex;gap:27px;font-size:14px;color:#bac9e6}nav a:hover{color:var(--a
 .scene-note strong{display:block;color:#c4fff7;font-size:13px;letter-spacing:.6px}
 .scene-note p{font-size:12px;margin:4px 0 0;line-height:1.45}
 .scene-tool{position:absolute;top:18px;right:19px;background:rgba(17,27,55,.78);border:1px solid var(--line);color:#e1f0ff;padding:9px 12px;border-radius:10px;z-index:3;font-size:12px}
+.scene-access{position:absolute;right:19px;top:64px;z-index:3;max-width:220px}
+.scene-access select{width:100%;color:#e4f6ff;background:rgba(17,27,55,.93);border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:12px;cursor:pointer}
+.scene-access select:focus-visible{outline:2px solid #a7fff1;outline-offset:3px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .scene-fallback{position:absolute;inset:0;display:flex;justify-content:center;align-items:center;text-align:center;pointer-events:none}
 .scene-fallback .orb{width:200px;height:200px;border-radius:32%;background:linear-gradient(145deg,rgba(57,102,204,.5),rgba(147,77,250,.3));border:2px solid #7ccef2;box-shadow:0 0 90px #3457c059;transform:rotate(32deg) skew(-9deg);animation:glow 7s linear infinite}
 @keyframes glow{50%{transform:rotate(212deg) skew(9deg)}}
@@ -112,6 +116,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
 <div class="scene-fallback" id="fallback" aria-hidden="true"><div class="orb"></div></div>
 <canvas id="scene" aria-label="Interactive 3D technology visualization" tabindex="0"></canvas>
 <button id="motion" class="scene-tool" type="button" aria-pressed="false">Pause rotation</button>
+<div class="scene-access"><label class="sr-only" for="scene-technology">Explore a technology</label><select id="scene-technology" aria-label="Explore a technology in the interactive 3D scene"><option value="">Select technology</option></select></div>
 <div class="scene-note" aria-live="polite"><strong id="node-title">INTERACTIVE TECHNOLOGY ORBIT</strong><p id="node-detail">Move, drag or touch to rotate the 3D environment. Select a glowing node to explore.</p></div>
 </div>
 </div>
@@ -143,6 +148,7 @@ const fallback=document.querySelector('#fallback');
 const motionBtn=document.querySelector('#motion');
 const title=document.querySelector('#node-title');
 const description=document.querySelector('#node-detail');
+const technologyPicker=document.querySelector('#scene-technology');
 let paused=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 motionBtn.textContent=paused?'Resume rotation':'Pause rotation';
 motionBtn.setAttribute('aria-pressed',String(paused));
@@ -157,6 +163,15 @@ const topics=[
   {name:'FULL STACK',info:'React, Next.js, Node.js, databases, deployment and accessible interfaces.',color:0x87baff},
   {name:'AUTOMATION',info:'n8n orchestration, resilient workflows, scheduled integration and monitoring.',color:0x8cf6cf}
 ];
+topics.forEach((topic,i)=>technologyPicker.add(new Option(topic.name,String(i))));
+function chooseTechnology(index){
+  if(!Number.isInteger(index)||index<0||index>=topics.length)return;
+  const topic=topics[index];
+  technologyPicker.value=String(index);
+  title.textContent=topic.name;
+  description.textContent=topic.info;
+}
+technologyPicker.addEventListener('change',()=>chooseTechnology(Number(technologyPicker.value)));
 try{
   const THREE=await import('https://cdn.jsdelivr.net/npm/three@0.179.1/build/three.module.js');
   const scene=new THREE.Scene();
@@ -238,7 +253,7 @@ try{
     const hits=ray.intersectObjects(nodes.map(n=>n.sphere),false);
     if(hits.length){
       const selection=nodes.find(n=>n.sphere===hits[0].object);
-      if(selection){title.textContent=selection.topic.name;description.textContent=selection.topic.info;}
+      if(selection)chooseTechnology(topics.indexOf(selection.topic));
     }
   });
   const resize=()=>{
@@ -248,7 +263,13 @@ try{
   window.addEventListener('resize',resize,{passive:true});resize();
   fallback.hidden=true;fallback.style.display='none';
   let prev=0,phase=0;
+  let sceneInViewport=true;
+  if('IntersectionObserver' in window){
+    const observer=new IntersectionObserver(entries=>{sceneInViewport=entries[0]?.isIntersecting??true;},{threshold:0});
+    observer.observe(sceneEl);
+  }
   function tick(now){
+    if(document.hidden||!sceneInViewport){prev=now;requestAnimationFrame(tick);return;}
     const dt=Math.min(50,now-prev||16);prev=now;
     if(!paused){phase+=dt*.00035;targetYaw+=dt*.00010;}
     yaw+=(targetYaw-yaw)*.085;pitch+=(targetPitch-pitch)*.085;
@@ -264,7 +285,7 @@ try{
   requestAnimationFrame(tick);
 }catch(error){
   title.textContent='3D VIEWER UNAVAILABLE';
-  description.textContent='The animated profile remains available on GitHub. This interactive view needs WebGL and access to the Three.js module.';
+  description.textContent='The interactive 3D viewer needs WebGL and access to the Three.js module. You can still explore each technology using the accessible selection menu.';
   console.warn('3D viewer could not start',error);
 }
 </script>
