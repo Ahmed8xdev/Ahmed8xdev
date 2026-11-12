@@ -1,34 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-label="Ahmed: full-stack engineer, intelligent systems and automation">
-<defs>
- <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0c1327"/><stop offset=".55" stop-color="#141b3a"/><stop offset="1" stop-color="#302057"/></linearGradient>
- <linearGradient id="txt" x1="0" x2="1"><stop stop-color="#f4f8ff"/><stop offset="1" stop-color="#8ef0de"/></linearGradient>
- <radialGradient id="halo"><stop stop-color="#6654fb" stop-opacity=".44"/><stop offset="1" stop-color="#6654fb" stop-opacity="0"/></radialGradient>
- <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse"><path d="M46 0H0V46" fill="none" stroke="#7784ca" stroke-opacity=".13"/></pattern>
-</defs>
-<rect width="1200" height="330" rx="18" fill="url(#bg)"/>
-<rect width="1200" height="330" rx="18" fill="url(#grid)"/>
-<ellipse cx="990" cy="150" rx="320" ry="240" fill="url(#halo)"/>
-<path d="M52 55h30" stroke="#79e9d3" stroke-width="4" stroke-linecap="round"/>
-<text x="96" y="59" fill="#a9b4db" font-family="Arial,sans-serif" font-size="14" font-weight="700" letter-spacing="4">BUILDING WHAT'S NEXT</text>
-<text x="49" y="149" fill="url(#txt)" font-family="Arial,sans-serif" font-size="78" font-weight="800" letter-spacing="-3">AHMED</text>
-<text x="52" y="195" fill="#e2e6ff" font-family="Arial,sans-serif" font-size="22">Full-stack engineer  /  Intelligent systems builder</text>
-<rect x="50" y="230" width="485" height="41" rx="20" fill="#313360" stroke="#7770b1" stroke-opacity=".8"/>
-<text x="75" y="256" fill="#b2fff1" font-family="monospace" font-size="15">AI</text>
-<circle cx="126" cy="249" r="2.4" fill="#9ca8d9"/>
-<text x="148" y="256" fill="#edf0ff" font-family="monospace" font-size="15">AUTOMATION</text>
-<circle cx="270" cy="249" r="2.4" fill="#9ca8d9"/>
-<text x="294" y="256" fill="#edf0ff" font-family="monospace" font-size="15">WEB PLATFORMS</text>
-<g transform="translate(965 165)" stroke-width="2" stroke-linejoin="round">
- <path d="M-182 -29 -80 -88 22 -29 -80 29Z" fill="#2d367a" stroke="#8d82ff"/>
- <path d="M-182 -29 -80 29 -80 87 -182 29Z" fill="#29265f" stroke="#7665ff"/>
- <path d="M22 -29 -80 29 -80 87 22 29Z" fill="#493a86" stroke="#8c73ff"/>
- <path d="M-91 -113 -18 -156 55 -113 -18 -70Z" fill="#285a91" stroke="#78dce9"/>
- <path d="M-91 -113 -18 -70 -18 24 -91 -18Z" fill="#225875" stroke="#61dbca"/>
- <path d="M55 -113 -18 -70 -18 24 55 -18Z" fill="#34568c" stroke="#8de3e4"/>
- <path d="M23 -67 111 -117 199 -67 111 -17Z" fill="#473781" stroke="#c092ff"/>
- <path d="M23 -67 111 -17 111 70 23 20Z" fill="#403477" stroke="#9678ef"/>
- <path d="M199 -67 111 -17 111 70 199 20Z" fill="#302e68" stroke="#8268f0"/>
- <path d="M-18 -70Q47 -151 111 -17" fill="none" stroke="#8cfff0" stroke-dasharray="6 8" stroke-opacity=".8"/>
-</g>
-<rect x=".5" y=".5" width="1199" height="329" rx="17.5" fill="none" stroke="#8580ec" stroke-opacity=".45"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330" role="img" aria-label="Ahmed Software Engineer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070d1d"/>
+      <stop offset="55%" stop-color="#111a37"/>
+      <stop offset="100%" stop-color="#211b45"/>
+    </linearGradient>
+    <linearGradient id="text" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#eef7ff"/>
+      <stop offset="55%" stop-color="#9ef7ea"/>
+      <stop offset="100%" stop-color="#b7a8ff"/>
+    </linearGradient>
+    <radialGradient id="glowA" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#6f64ff" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#6f64ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowB" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#84f3e5" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#84f3e5" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M42 0H0V42" fill="none" stroke="#92a0db" stroke-opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="330" rx="24" fill="url(#bg)"/>
+  <rect width="1200" height="330" rx="24" fill="url(#grid)"/>
+  <ellipse cx="930" cy="140" rx="290" ry="220" fill="url(#glowA)"/>
+  <ellipse cx="860" cy="220" rx="220" ry="160" fill="url(#glowB)"/>
+
+  <g opacity="0.95">
+    <path d="M850 110 940 60 1030 110 940 160Z" fill="#273774" stroke="#89e9f0" stroke-opacity="0.85" stroke-width="2"/>
+    <path d="M850 110 940 160 940 250 850 200Z" fill="#1e275d" stroke="#7586ff" stroke-opacity="0.85" stroke-width="2"/>
+    <path d="M1030 110 940 160 940 250 1030 200Z" fill="#3a2f74" stroke="#9b81ff" stroke-opacity="0.85" stroke-width="2"/>
+    <path d="M905 132 940 97 975 132 940 167Z" fill="#86f6ea" fill-opacity="0.18" stroke="#dffeff" stroke-opacity="0.9" stroke-width="2"/>
+  </g>
+
+  <text x="70" y="145" fill="url(#text)" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="800" letter-spacing="-3">AHMED</text>
+  <text x="74" y="198" fill="#dce8ff" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="600">Software Engineer</text>
+
+  <rect x="0.75" y="0.75" width="1198.5" height="328.5" rx="23.25" fill="none" stroke="#8b84ff" stroke-opacity="0.38"/>
 </svg>
