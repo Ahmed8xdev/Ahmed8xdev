@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="./assets/hero.svg" width="100%" alt="Ahmed, software engineer developing MCP integrations, Python automation, full stack web applications, PHP Laravel systems and reverse engineering tools" />
+<img src="./assets/hero.svg" width="100%" alt="Ahmed Software Engineer" />
 
-<h1>Ahmed | Software Engineer & Intelligent Systems Builder</h1>
+<h1>Ahmed | Software Engineer</h1>
 
 <p><strong>Full Stack Development · MCP Servers & Integrations · Reverse Engineering · AI Agents · Automation</strong></p>
 
@@ -12,9 +12,7 @@
 <a href="./docs/index.html"><img alt="Interactive 3D portfolio source" src="https://img.shields.io/badge/Explore-Interactive_3D_Lab-276a82?style=for-the-badge" /></a>
 </p>
 
-<a href="./assets/technology-orbit.gif"><img src="./assets/technology-orbit.gif" alt="Looping three dimensional technology orbit showing Python, Model Context Protocol, AI agents, IDA Pro, PHP and Laravel around a rotating engineered crystal" width="96%" /></a>
 
-<sub>Custom animated 3D technology artwork. Built with geometric rendering and generated through GitHub Actions. The GIF animates automatically; a separate browser scene provides actual drag, touch and selection controls.</sub>
 
 </div>
 
@@ -109,11 +107,13 @@ The following project cards are derived from real public repositories. A daily G
 
 ## Interactive 3D experience
 
-The technology GIF above provides a seamless visual loop directly inside GitHub. **Real interaction requires a browser scene**, because GIF files cannot respond to mouse or touch input and GitHub README files cannot execute arbitrary JavaScript. The accompanying 3D lab uses Three.js with actual three dimensional geometry, pointer rotation, keyboard support, selectable technology nodes and a mobile responsive layout.
+My portfolio includes a **native Three.js 3D scene**, built with WebGL geometry, physically based materials, lighting, orbiting objects, responsive layouts and direct pointer and keyboard interaction. This is real browser rendered 3D code rather than a prerecorded animation.
 
-<p><a href="https://ahmed8xdev.github.io/Ahmed8xdev/"><strong>Explore the interactive 3D portfolio on GitHub Pages →</strong></a></p>
+The 3D environment complements my technical work across **Python, PHP, Laravel, IDA Pro, reverse engineering, MCP server development, MCP integrations, AI agents, JavaScript, TypeScript, React, Next.js, Node.js, databases, Docker, Kubernetes, Linux, n8n and software automation**.
 
-<sub>The GitHub Pages publishing source must be enabled for the interactive link to become publicly available. The entire source is in <a href="./docs/index.html">docs/index.html</a>.</sub>
+[**Explore the interactive 3D source code**](./docs/index.html) · [GitHub Pages publishing guide](./SEARCH_VISIBILITY.md)
+
+<sub>GitHub README files cannot run interactive JavaScript. The Three.js implementation works in a browser once GitHub Pages is enabled for the docs directory.</sub>
 
 ## What I build and explore
 
