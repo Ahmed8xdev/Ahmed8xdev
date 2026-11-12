@@ -30,6 +30,12 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+      - name: Replace star and fork footer with actual commit and PR activity
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 scripts/customize-3d-contrib.py
+          python3 -m unittest discover -s tests -p 'test_customize_3d_contrib.py'
       - name: Validate the graph and refresh its README cache key
         shell: bash
         run: |
