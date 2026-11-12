@@ -9,6 +9,7 @@ on:
       - 'docs/**'
       - 'data/**'
       - 'scripts/check-profile.mjs'
+      - 'scripts/check-3d-scene.mjs'
       - 'tests/profile-integrity.test.mjs'
       - '.github/workflows/profile-integrity.yml'
   push:
@@ -20,6 +21,7 @@ on:
       - 'docs/**'
       - 'data/**'
       - 'scripts/check-profile.mjs'
+      - 'scripts/check-3d-scene.mjs'
       - 'tests/profile-integrity.test.mjs'
       - '.github/workflows/profile-integrity.yml'
   workflow_dispatch:
@@ -40,3 +42,5 @@ jobs:
         run: node scripts/check-profile.mjs
       - name: Run automated regression tests
         run: node --test tests/profile-integrity.test.mjs
+      - name: Check interactive viewer accessibility and syntax
+        run: node scripts/check-3d-scene.mjs
