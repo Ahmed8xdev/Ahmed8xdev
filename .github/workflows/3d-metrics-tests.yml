@@ -1,0 +1,32 @@
+name: Validate 3D contribution metrics
+
+on:
+  pull_request:
+    paths:
+      - 'scripts/customize-3d-contrib.py'
+      - 'tests/test_customize_3d_contrib.py'
+      - '.github/workflows/3d-activity.yml'
+      - '.github/workflows/3d-metrics-tests.yml'
+      - 'profile-3d-contrib/profile-night-rainbow.svg'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/customize-3d-contrib.py'
+      - 'tests/test_customize_3d_contrib.py'
+      - '.github/workflows/3d-metrics-tests.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check dynamic SVG footer metrics
+        run: python -m unittest discover -s tests -p 'test_customize_3d_contrib.py' -v
