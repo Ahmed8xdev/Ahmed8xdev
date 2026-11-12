@@ -132,3 +132,21 @@ The 3D environment complements my technical work across **Python, PHP, Laravel, 
 <p><strong>Build thoughtfully. Integrate intelligently. Ship useful software.</strong></p>
 <p><a href="https://github.com/Ahmed8xdev">GitHub profile</a> · <a href="https://github.com/Ahmed8xdev?tab=repositories">Source repositories</a> · <a href="./PROJECTS.md">Project details</a> · <a href="./docs/index.html">Interactive 3D source</a> · <a href="./SEARCH_VISIBILITY.md">Search Console setup</a></p>
 </div>
+
+---
+
+<!-- MUSIC FLOW FOOTER START -->
+<div align="center">
+  <img src="./assets/keep-the-flow-heading.svg" alt="Keep the flow" width="480" />
+
+  <table align="center">
+    <tr>
+      <td align="center">
+        <img src="./assets/footer-music-coding.gif" alt="Animated music and coding workspace with an accurate steaming coffee mug, headphones, glowing code, flowing light and audio waveforms" width="719" />
+      </td>
+    </tr>
+  </table>
+
+  <img src="./assets/go-with-flow-signature.svg" alt="go with flow" width="260" />
+</div>
+<!-- MUSIC FLOW FOOTER END -->
