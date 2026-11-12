@@ -1,0 +1,42 @@
+name: Check profile integrity
+
+on:
+  pull_request:
+    paths:
+      - 'README.md'
+      - 'PROJECTS.md'
+      - 'assets/**'
+      - 'docs/**'
+      - 'data/**'
+      - 'scripts/check-profile.mjs'
+      - 'tests/profile-integrity.test.mjs'
+      - '.github/workflows/profile-integrity.yml'
+  push:
+    branches: [main]
+    paths:
+      - 'README.md'
+      - 'PROJECTS.md'
+      - 'assets/**'
+      - 'docs/**'
+      - 'data/**'
+      - 'scripts/check-profile.mjs'
+      - 'tests/profile-integrity.test.mjs'
+      - '.github/workflows/profile-integrity.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify profile assets and links
+        run: node scripts/check-profile.mjs
+      - name: Run automated regression tests
+        run: node --test tests/profile-integrity.test.mjs
