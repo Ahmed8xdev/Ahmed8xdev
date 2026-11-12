@@ -36,6 +36,11 @@ jobs:
           set -euo pipefail
           test -s profile-3d-contrib/profile-night-rainbow.svg
           grep -q '<svg' profile-3d-contrib/profile-night-rainbow.svg
+          # Avoid unnecessary bot commits when the contribution data is identical.
+          if git diff --quiet -- profile-3d-contrib/profile-night-rainbow.svg; then
+            echo 'No new public contribution activity; graph is already current.'
+            exit 0
+          fi
           python3 - <<'PY'
           from datetime import datetime, timezone
           from pathlib import Path
