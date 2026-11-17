@@ -6,8 +6,6 @@ on:
     paths:
       - '.github/workflows/project-discovery.yml'
       - 'scripts/update-projects.mjs'
-  schedule:
-    - cron: '45 4 * * *'
 
 permissions:
   contents: write
